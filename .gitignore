@@ -1,0 +1,31 @@
+# Security
+*.pem
+*.key
+*.env
+.env*
+secrets/
+credentials/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build
+dist/
+build/
+.cache/
+
+# Dependencies
+node_modules/
