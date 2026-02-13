@@ -1141,6 +1141,10 @@
             }
         }
     </style>
+    
+    <!-- Calendly Widget -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </head>
 <body>
     <script>
@@ -1171,6 +1175,7 @@
                 <p class="tagline">Hi, I'm Phillip Neiman. I help individuals and businesses deploy self-hosted AI assistants on <span style="color: #FF9900; font-weight: 700;">AWS</span> quickly and reliably. I guarantee you'll have a working AI assistant you can text — or you don't pay. I've navigated the gotchas to get your <span style="background: linear-gradient(90deg, #6DC8B8 0%, #9A8080 50%, #C85A4A 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 700;">OpenClaw</span> bot online. <a href="https://neiman.dev" target="_blank" style="color: white; text-decoration: underline; opacity: 0.95;">Learn more →</a></p>
                 <div class="hero-buttons">
                     <a href="#guide" class="cta">Read the Full Guide</a>
+                    <a href="https://calendly.com/phillipneiman/30-minute-meeting" target="_blank" class="cta cta-secondary" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/phillipneiman/30-minute-meeting'}); return false;">Schedule Consultation</a>
                     <a href="https://neiman.dev" target="_blank" class="cta cta-secondary">Hire Me</a>
                 </div>
             </div>
@@ -1800,7 +1805,10 @@ echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab</code></pre>
         <div class="container">
             <h2>Need Help?</h2>
             <p>I offer results-based consulting services for OpenClaw installation, customization, and troubleshooting. You get a working bot or you don't pay.</p>
-            <a href="https://neiman.dev" target="_blank" class="cta">Get in Touch</a>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="https://calendly.com/phillipneiman/30-minute-meeting" target="_blank" class="cta" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/phillipneiman/30-minute-meeting'}); return false;">Schedule Free Consultation</a>
+                <a href="https://neiman.dev" target="_blank" class="cta">Visit Website</a>
+            </div>
         </div>
     </section>
 
