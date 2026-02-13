@@ -176,13 +176,23 @@
             color: white;
         }
 
+        .subtitle-container {
+            display: inline-block;
+            padding: 0.5rem 1.25rem;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 1rem;
+        }
+
         .hero .subtitle {
             font-size: 1.5rem;
             background: linear-gradient(90deg, #6DC8B8 0%, #9A8080 50%, #C85A4A 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            margin-bottom: 1rem;
+            margin: 0;
             font-weight: 400;
             text-align: left;
         }
@@ -986,6 +996,11 @@
                 text-align: center;
             }
             
+            .subtitle-container {
+                display: block;
+                text-align: center;
+            }
+
             .hero .subtitle {
                 font-size: 1.2rem;
                 text-align: center;
@@ -1152,7 +1167,9 @@
                     <img src="openclaw-logo.webp" alt="OpenClaw" class="openclaw-logo">
                 </div>
                 <h1>Fast, Expert Installation & Deployment</h1>
-                <p class="subtitle"><em>Guaranteed Results</em></p>
+                <div class="subtitle-container">
+                    <p class="subtitle"><em>Guaranteed Results</em></p>
+                </div>
                 <p class="tagline">Hi, I'm Phillip Neiman. I help individuals and businesses deploy self-hosted AI assistants on AWS quickly and reliably. I guarantee you'll have a working AI assistant you can text — or you don't pay. I've navigated the gotchas to get your OpenClaw bot online. <a href="https://neiman.dev" target="_blank" style="color: white; text-decoration: underline; opacity: 0.95;">Learn more →</a></p>
                 <div class="hero-buttons">
                     <a href="#guide" class="cta">Read the Full Guide</a>
