@@ -964,6 +964,15 @@
         }
 
         @media (max-width: 768px) {
+            /* Key value statement mobile */
+            section h2[style*="font-size: 3.5rem"] {
+                font-size: 2.25rem !important;
+            }
+            
+            section p[style*="font-size: 1.3rem"] {
+                font-size: 1rem !important;
+            }
+
             .hero-content {
                 flex-direction: column;
                 text-align: center;
@@ -1157,13 +1166,19 @@
         </div>
     </section>
 
+    <!-- Key Value Statement -->
+    <section style="background: white; padding: 3rem 0 1rem 0; border-bottom: 1px solid var(--border);">
+        <div class="container" style="text-align: center;">
+            <h2 style="font-size: 3.5rem; font-weight: 800; background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #06b6d4 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1rem; line-height: 1.2; letter-spacing: -0.02em;">Your AI. Your Infrastructure. Your Rules.</h2>
+            <p style="font-size: 1.3rem; color: var(--text); max-width: 800px; margin: 0 auto; line-height: 1.6;">Stop paying $20-200/month for ChatGPT subscriptions. Deploy your own AI assistant that's smarter, private, and costs pennies per conversation. I guarantee you'll have it working.</p>
+        </div>
+    </section>
+
     <!-- Value Proposition -->
     <section class="value-proposition">
         <div class="container">
             <div class="vp-content">
                 <div class="vp-main">
-                    <h2>Your AI. Your Infrastructure. Your Rules.</h2>
-                    <p class="vp-subtitle">Stop paying $20-200/month for ChatGPT subscriptions. Deploy your own AI assistant that's smarter, private, and costs pennies per conversation. I guarantee you'll have it working.</p>
                     
                     <div class="vp-grid">
                         <div class="vp-point">
