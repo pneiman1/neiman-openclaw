@@ -100,26 +100,20 @@
             transform: scale(1.05);
         }
 
-        .brand-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
+        .openclaw-logo-container {
+            display: inline-block;
             margin-bottom: 1.5rem;
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: rgba(255, 255, 255, 0.9);
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
+            padding: 0.75rem 1.5rem;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        .lobster-icon {
-            font-size: 1.5rem;
-            line-height: 1;
-            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
-        }
-
-        .brand-text {
-            color: white;
+        .openclaw-logo {
+            height: 60px;
+            width: auto;
+            display: block;
         }
 
         .hero h1 {
@@ -1015,12 +1009,12 @@
                 font-size: 1.8rem;
             }
 
-            .lobster-icon {
-                font-size: 1.2rem;
+            .openclaw-logo {
+                height: 45px;
             }
 
-            .brand-badge {
-                font-size: 0.9rem;
+            .openclaw-logo-container {
+                padding: 0.6rem 1.2rem;
             }
 
             .vp-main h2 {
@@ -1095,9 +1089,8 @@
     <section class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <div class="brand-badge">
-                    <span class="lobster-icon">🦞</span>
-                    <span class="brand-text">OpenClaw</span>
+                <div class="openclaw-logo-container">
+                    <img src="openclaw-logo.jpg" alt="OpenClaw" class="openclaw-logo">
                 </div>
                 <h1>Fast, Expert Installation & Deployment</h1>
                 <p class="subtitle">AI Consultant Services</p>
