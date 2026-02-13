@@ -208,6 +208,108 @@
             gap: 1rem;
         }
 
+        /* Value Proposition */
+        .value-proposition {
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+            padding: 5rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .vp-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .vp-main h2 {
+            font-size: 2.75rem;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        .vp-subtitle {
+            font-size: 1.3rem;
+            color: var(--text);
+            text-align: center;
+            margin-bottom: 3rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .vp-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .vp-point {
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        .vp-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .vp-point h4 {
+            font-size: 1.3rem;
+            color: var(--secondary);
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+
+        .vp-point p {
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: var(--shadow-xl);
+            margin-top: 3rem;
+        }
+
+        .cta-box h3 {
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .cta-box p {
+            color: white;
+            opacity: 0.95;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: var(--primary-dark);
+            padding: 1rem 3rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
         /* Architecture Section */
         .architecture-section {
             background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%);
@@ -951,6 +1053,31 @@
                 font-size: 0.65rem;
             }
 
+            .vp-main h2 {
+                font-size: 1.8rem;
+            }
+
+            .vp-subtitle {
+                font-size: 1rem;
+            }
+
+            .vp-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .cta-box {
+                padding: 2rem 1.5rem;
+            }
+
+            .cta-box h3 {
+                font-size: 1.5rem;
+            }
+
+            .cta-box p {
+                font-size: 1rem;
+            }
+
             .scroll-to-guide {
                 width: 48px;
                 height: 48px;
@@ -1015,6 +1142,47 @@
             </div>
             <div class="hero-image">
                 <img src="phil.jpg" alt="Phillip Neiman - AI Consultant">
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition -->
+    <section class="value-proposition">
+        <div class="container">
+            <div class="vp-content">
+                <div class="vp-main">
+                    <h2>Your AI. Your Infrastructure. Your Rules.</h2>
+                    <p class="vp-subtitle">Stop paying $20-200/month for ChatGPT subscriptions. Deploy your own AI assistant that's smarter, private, and costs pennies per conversation.</p>
+                    
+                    <div class="vp-grid">
+                        <div class="vp-point">
+                            <div class="vp-icon">🔒</div>
+                            <h4>Fully Private</h4>
+                            <p>Your data never leaves your control. No corporate servers analyzing your conversations.</p>
+                        </div>
+                        <div class="vp-point">
+                            <div class="vp-icon">📱</div>
+                            <h4>Always in Your Pocket</h4>
+                            <p>Access via Telegram, WhatsApp, or Discord. Your AI assistant follows you everywhere.</p>
+                        </div>
+                        <div class="vp-point">
+                            <div class="vp-icon">💰</div>
+                            <h4>Pay Only What You Use</h4>
+                            <p>Claude Sonnet 4.5 costs ~$0.05 per conversation. No subscriptions, no limits.</p>
+                        </div>
+                        <div class="vp-point">
+                            <div class="vp-icon">⚡</div>
+                            <h4>Actually Useful</h4>
+                            <p>Automate tasks, remember context forever, integrate with your tools. Not just a chatbot.</p>
+                        </div>
+                    </div>
+
+                    <div class="cta-box">
+                        <h3>Create Your First AI Worker Bot in 30 Minutes</h3>
+                        <p>I'll show you exactly how. No DevOps experience required.</p>
+                        <a href="#guide" class="cta-button">Get Started →</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
